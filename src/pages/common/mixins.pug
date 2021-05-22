@@ -1,0 +1,7 @@
+mixin membership(data)
+  .membership__item
+    .membership__item-info
+      .membership__item-icon
+        img(src='img/' + data.img alt="")
+      .membership__item-title!=data.name
+

@@ -1,33 +1,31 @@
 .banner {
-    height: 520px;
-
     &__bg {
-        height: 100%;
+        height: 520px;
         background-size: cover;
     }
 
     &__wrap {
-        height: 520px;
         display: flex;
         justify-content: flex-end;
+        height: 520px;
     }
 
     &__info {
-        height: 100%;
-        width: 50%;
         display: flex;
-        flex-direction: column;
         justify-content: flex-end;
+        width: 50%;
+        height: 100%;
+        flex-direction: column;
     }
 
     &__text {
-        color: #ffffff;
-        font-family: $primary-font;
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 1.4;
         margin-bottom: 60px;
+        font-family: $primary-font;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1.4;
         text-transform: uppercase;
+        color: #ffffff;
     }
 
     .button {

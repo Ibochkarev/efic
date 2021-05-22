@@ -7,6 +7,7 @@
         align-items: center;
         justify-content: space-between;
         max-width: 1000px;
+        margin: 0 auto;
     }
 
     &__item {
@@ -23,12 +24,12 @@
         }
 
         &-title {
-            color: $blue;
             font-family: $primary-font;
-            font-weight: 700;
             font-size: 24px;
+            font-weight: 700;
             line-height: 29px;
             text-transform: uppercase;
+            color: $blue;
         }
     }
 }
