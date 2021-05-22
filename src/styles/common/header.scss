@@ -1,6 +1,8 @@
-@import '../mixins/media';
+.header {
+    padding-top: 45px;
+    padding-bottom: 20px;
 
-header {
-    @include media-tablet {
+    &__logo {
+        max-width: 285px;
     }
 }

@@ -1,14 +1,16 @@
 .button {
-    border: 1px solid;
-    color: #ffffff;
+    cursor: pointer;
     display: block;
-    font-size: 22px;
-    height: 65px;
-    line-height: 65px;
-    min-width: 250px;
-    text-align: center;
     width: max-content;
+    height: 65px;
+    min-width: 250px;
+    font-size: 22px;
+    line-height: 65px;
+    text-align: center;
+    color: #ffffff;
+    border: 1px solid;
     border-radius: 6px;
+    transition: all 0.25s ease-in-out;
 
     &--orange {
         background-color: $orange;

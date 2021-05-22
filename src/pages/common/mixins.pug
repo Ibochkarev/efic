@@ -5,3 +5,43 @@ mixin membership(data)
         img(src='img/' + data.img alt="")
       .membership__item-title!=data.name
 
+mixin expert(data)
+  .experts__item
+    .experts__item-photo
+      img(src='img/' + data.img alt="")
+    .experts__item-info
+      .experts__item-info__top
+        .experts__item-title!=data.name
+        .experts__item-position!=data.position
+      a.experts__item-link(href='#') View CV
+
+mixin plan(data)
+  .col-12.col-sm-6.col-md-3
+    .plans__item
+      .plans__item-name!=data.name
+      .plans__item-text!=data.text
+      .plans__item-price!=data.price
+      .plans__item-price__text!=data.priceText
+      a.plans__item-button.button.button--orange Join Nov
+      .plans__item-note!=data.note
+
+mixin who(data)
+  .col-12.col-sm-6.col-md-3
+    .who__item
+      .who__item-image
+        img(src='img/' + data.img alt="")
+      .who__item-title
+        span!=data.name
+
+mixin about(data)
+  .col-12.col-sm-6.col-md-4
+    .about__item
+      .about__item-top
+        .about__item-num
+          span!=data.number
+        .about__item-icon
+          img(src='img/' + data.img alt="")
+      .about__item-info
+        .about__item-title!=data.name
+        .about__item-text!=data.text
+

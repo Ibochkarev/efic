@@ -1,0 +1,75 @@
+.plans {
+    padding-top: 52px;
+    padding-bottom: 90px;
+    background: rgba(247, 147, 30, 0.3);
+
+    &__wrap {
+        display: flex;
+        align-items: stretch;
+    }
+
+    .section__title {
+        text-align: center;
+    }
+
+    &__item {
+        margin-bottom: 25px;
+        padding: 30px 20px 35px;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 6px;
+
+        &-name {
+            height: 55px;
+            margin-bottom: 17px;
+            font-family: $primary-font;
+            font-size: 22px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $blue;
+        }
+
+        &-text {
+            height: 110px;
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        &-price {
+            margin-bottom: 5px;
+            font-family: $primary-font;
+            font-size: 32px;
+            font-weight: 300;
+            line-height: 39px;
+            color: $blue;
+
+            sup {
+                font-size: 22px;
+            }
+
+            &__text {
+                margin-bottom: 28px;
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+
+        &-button {
+            min-width: 100%;
+            margin-bottom: 5px;
+        }
+
+        &-note {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.2;
+        }
+    }
+
+    &__note {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.2;
+        text-align: right;
+    }
+}

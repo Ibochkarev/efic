@@ -1,0 +1,39 @@
++b.SECTION.plans.section
+  .container
+    .row
+      .col-12
+        h2.section__title European Pain
+          br
+          | Federation Academy Pricing
+    .row
+      +plan({
+        name: "REGULAR",
+        text: "physicians from World Bank <br>High Income Countries <br>and pharmaceutical/ <br>MedTech industry professionals",
+        price: "€ 12 <sup>*</sup>",
+        priceText:"Academy members rate <br>per month",
+        note: "* paid as an annual fee of €145"
+      })
+      +plan({
+        name: "Discounted",
+        text: "physicians from <br>World Bank Lower and<br> Middle-Income Countries",
+        price: "€ 7 <sup>*</sup>",
+        priceText:"Academy members rate <br>per month",
+        note: "* paid as an annual fee of €85"
+      })
+      +plan({
+        name: "Allied Professionals",
+        text: "physiotherapists, <br>psychologists, nurses",
+        price: "€ 6,25 <sup>*</sup>",
+        priceText:"Academy members rate <br>per month",
+        note: "* paid as an annual fee of €75"
+      })
+      +plan({
+        name: "students",
+        text: "",
+        price: "€ 3 <sup>*</sup>",
+        priceText:"Academy members rate <br>per month",
+        note: "* paid as an annual fee of €35"
+      })
+    .row
+      .col-12
+        +e.note Prices do not include VAT
