@@ -2,24 +2,5 @@ extends common/layout
 
 block content
   +b.DIV.main
-    .info-block
-      .container
-        .info-block__wrap
-          .info-block__item
-            .info-block__item-img
-              img(src="img/info-block/01.svg", alt="" loading="lazy")
-            .info-block__item-title Improve your
-              br
-              | understanding of pain
-          .info-block__item
-            .info-block__item-img
-              img(src="img/info-block/02.svg", alt="" loading="lazy")
-            .info-block__item-title Benefit
-              br
-              | your career
-          .info-block__item
-            .info-block__item-img
-              img(src="img/info-block/03.svg", alt="" loading="lazy")
-            .info-block__item-title Share and learn
-              br
-              | cutting edge research
+    include blocks/banner
+    include blocks/info-block

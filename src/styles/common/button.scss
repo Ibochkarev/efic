@@ -1,0 +1,17 @@
+.button {
+    border: 1px solid;
+    color: #ffffff;
+    display: block;
+    font-size: 22px;
+    height: 65px;
+    line-height: 65px;
+    min-width: 250px;
+    text-align: center;
+    width: max-content;
+    border-radius: 6px;
+
+    &--orange {
+        background-color: $orange;
+        border-color: $orange;
+    }
+}

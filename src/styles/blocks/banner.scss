@@ -1,0 +1,36 @@
+.banner {
+    height: 520px;
+
+    &__bg {
+        height: 100%;
+        background-size: cover;
+    }
+
+    &__wrap {
+        height: 520px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__info {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    &__text {
+        color: #ffffff;
+        font-family: $primary-font;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 1.4;
+        margin-bottom: 60px;
+        text-transform: uppercase;
+    }
+
+    .button {
+        margin-bottom: 65px;
+    }
+}
