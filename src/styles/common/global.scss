@@ -11,7 +11,8 @@ html {
 }
 
 body {
-    font-family: 'Lato-Regular';
+    background: #e5e5e5;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
 }
 
@@ -21,4 +22,15 @@ img {
 
 a {
     text-decoration: none;
+}
+
+@media (min-width: 1400px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1080px;
+    }
 }
