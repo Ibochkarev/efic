@@ -61,10 +61,11 @@
         "webpack-stream": "^6.1.1"
     },
     "dependencies": {
-        "bootstrap": "5.0.0-beta1",
-        "jquery": "^3.5.1",
+        "bootstrap": "^5.0.1",
+        "caniuse-lite": "^1.0.30001228",
+        "jquery": "^3.6.1",
         "normalize.css": "^8.0.1",
-        "popper.js": "2.0.0-next.4"
+        "popper.js": "2.9.2"
     },
     "editorconfig-cli": [
         "*.json",
