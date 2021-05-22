@@ -1,0 +1,34 @@
++b.SECTION.webinars.section
+  .container
+    .row
+      .col-12
+        h2.section__title Upcomming
+          br
+          | webinars
+
+    .row
+      .col-12
+        +e.list
+          +e.item(style="background-image: url('img/webinars/01.jpg')")
+            +e.item-info
+              +e.item-date 4-6 November
+                span 2021
+              +e.item-title Virtual Pain Education
+                br
+                | Summit 2021
+              +e.item-text An online event for all healthcare professionals interested in advancing their knowledge in pain management
+              +e.A.item-link.link(href="#") Find out more
+
+          +e.item(style="background-image: url('img/webinars/02.jpg')")
+            +e.item-info
+              +e.item-date 25 May
+                span 2021
+              +e.item-title Non-Medical Prescribing
+                br
+                | for Pain CPD virtual conference
+              +e.item-text This important national conference provides an essential update for current and aspiring non medical prescribers on prescribing for pain.
+              +e.A.item-link.link(href="#") Find out more
+
+    .row
+      .col-12
+        a.button.button--blue(href="#") View Full list

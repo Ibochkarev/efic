@@ -12,6 +12,7 @@ html {
 
 body {
     background: #e5e5e5;
+    color: $dark;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     margin: 0;
@@ -33,5 +34,17 @@ a {
     .container-xl,
     .container-xxl {
         max-width: 1080px;
+    }
+}
+
+.section {
+    &__title {
+        color: $blue;
+        font-family: $primary-font;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        margin-bottom: 24px;
+        text-transform: uppercase;
     }
 }

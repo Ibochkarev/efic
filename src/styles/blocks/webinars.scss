@@ -1,0 +1,54 @@
+.webinars {
+    padding-top: 160px;
+    padding-bottom: 160px;
+
+    &__list {
+        display: flex;
+        margin-bottom: 60px;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    &__item {
+        background-size: cover;
+        color: #ffffff;
+        position: relative;
+        mix-blend-mode: luminosity;
+        border-radius: 6px;
+        width: calc(50% - 20px);
+
+        &-info {
+            padding: 56px 90px 40px;
+            position: relative;
+            z-index: 1;
+        }
+
+        &-date {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 37px;
+            margin-bottom: 29px;
+
+            span {
+                display: block;
+            }
+        }
+
+        &-title {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 28px;
+            margin-bottom: 30px;
+        }
+
+        &-text {
+            font-size: 16px;
+            line-height: 1.2;
+            margin-bottom: 40px;
+        }
+
+        &-link {
+            color: #ffffff;
+        }
+    }
+}
