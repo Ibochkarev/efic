@@ -65,7 +65,8 @@
         "caniuse-lite": "^1.0.30001228",
         "jquery": "^3.6.1",
         "normalize.css": "^8.0.1",
-        "popper.js": "2.9.2"
+        "popper.js": "2.9.2",
+        "swiper": "^6.6.2"
     },
     "editorconfig-cli": [
         "*.json",

@@ -6,14 +6,15 @@ mixin membership(data)
       .membership__item-title!=data.name
 
 mixin expert(data)
-  .experts__item
-    .experts__item-photo
-      img(src='img/' + data.img alt="")
-    .experts__item-info
-      .experts__item-info__top
-        .experts__item-title!=data.name
-        .experts__item-position!=data.position
-      a.experts__item-link(href='#') View CV
+  .swiper-slide
+    .experts__item
+      .experts__item-photo
+        img(src='img/' + data.img alt="")
+      .experts__item-info
+        .experts__item-info__top
+          .experts__item-title!=data.name
+          .experts__item-position!=data.position
+        a.experts__item-link(href='#') View CV
 
 mixin plan(data)
   .col-12.col-sm-6.col-md-3

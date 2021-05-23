@@ -3,6 +3,106 @@
     padding-bottom: 20px;
 
     &__logo {
-        max-width: 285px;
+        img {
+            max-width: 190px;
+            height: auto;
+        }
+    }
+
+    &__btn-menu {
+        z-index: 20;
+        cursor: pointer;
+        position: relative;
+        display: none;
+        width: 26px;
+        height: 26px;
+        border: 0;
+        transform: rotate(0deg);
+        transition: 0.5s ease-in-out;
+        background-color: transparent;
+
+        @media (max-width: 768px) {
+            display: block;
+        }
+
+        span {
+            position: absolute;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: $blue;
+            opacity: 1;
+            transform: rotate(0deg);
+            transition: 0.25s ease-in-out;
+
+            &:nth-child(1) {
+                top: 7px;
+            }
+
+            &:nth-child(2) {
+                top: 15px;
+            }
+        }
+
+        &.is-open span:nth-child(1) {
+            top: 9px;
+            left: -3px;
+            transform: rotate(45deg);
+        }
+
+        &.is-open span:nth-child(2) {
+            top: 9px;
+            left: -3px;
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 0;
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+    box-sizing: border-box;
+    flex-direction: column;
+
+    &.is-active {
+        z-index: 20;
+        height: 100vh;
+        padding-bottom: 55px;
+        color: #ffffff;
+        background: $blue;
+        opacity: 1;
+        will-change: opacity;
+        transition-duration: 0.2s;
+        transition-delay: 0.3s;
+
+        .mobile-menu__list {
+            text-align: center;
+            opacity: 1;
+            list-style-type: none;
+
+            .mobile-menu__list-item {
+                &:not(:last-child) {
+                    margin-bottom: 30px;
+                }
+            }
+
+            .mobile-menu__list-link {
+                font-family: $primary-font;
+                color: #ffffff;
+            }
+        }
+    }
+
+    &__list {
+        opacity: 0;
     }
 }

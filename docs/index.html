@@ -40,12 +40,22 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <div class="mobile-menu">
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__list-item"><a class="mobile-menu__list-link" href="#">Experts</a></li>
+        <li class="mobile-menu__list-item"><a class="mobile-menu__list-link" href="#">Events</a></li>
+        <li class="mobile-menu__list-item"><a class="mobile-menu__list-link" href="#">Benefit</a></li>
+        <li class="mobile-menu__list-item"><a class="mobile-menu__list-link" href="#">Pricing</a></li>
+        <li class="mobile-menu__list-item"><a class="mobile-menu__list-link" href="#">About</a></li>
+        <li class="mobile-menu__list-item"><a class="mobile-menu__list-link" href="#">FAQ</a></li>
+      </ul>
+    </div>
     <header class="header">
       <div class="container">
         <div class="row">
-          <div class="col-12">
-            <div class="header__text">Header
-            </div>
+          <div class="col-12"><a class="header__logo" href="#"><img src="img/global/logo.svg" alt=""></a>
+            <button class="header__btn-menu" type="button"><span></span><span></span>
+            </button>
           </div>
         </div>
       </div>
@@ -103,58 +113,146 @@
             <div class="col-md-2 _hide"></div>
             <div class="col-md-10">
               <div class="experts__wrap">
-                <div class="experts__item">
-                  <div class="experts__item-photo"><img src="img/experts/01.jpg" alt=""/></div>
-                  <div class="experts__item-info">
-                    <div class="experts__item-info__top">
-                      <div class="experts__item-title">Dominic Aldington</div>
-                      <div class="experts__item-position">The Pain Team Physicians</div>
-                    </div><a class="experts__item-link" href="#">View CV</a>
+                <div class="swiper-container expert-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="experts__item">
+                        <div class="experts__item-photo"><img src="img/experts/01.jpg" alt=""/></div>
+                        <div class="experts__item-info">
+                          <div class="experts__item-info__top">
+                            <div class="experts__item-title">Dominic Aldington</div>
+                            <div class="experts__item-position">The Pain Team Physicians</div>
+                          </div><a class="experts__item-link" href="#">View CV</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="experts__item">
+                        <div class="experts__item-photo"><img src="img/experts/02.jpg" alt=""/></div>
+                        <div class="experts__item-info">
+                          <div class="experts__item-info__top">
+                            <div class="experts__item-title">Sam H Ahmedzai</div>
+                            <div class="experts__item-position">The University of Sheffield Physicians</div>
+                          </div><a class="experts__item-link" href="#">View CV</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="experts__item">
+                        <div class="experts__item-photo"><img src="img/experts/03.jpg" alt=""/></div>
+                        <div class="experts__item-info">
+                          <div class="experts__item-info__top">
+                            <div class="experts__item-title">Emma	Briggs</div>
+                            <div class="experts__item-position">King’s College London Nurses</div>
+                          </div><a class="experts__item-link" href="#">View CV</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="experts__item">
+                        <div class="experts__item-photo"><img src="img/experts/04.jpg" alt=""/></div>
+                        <div class="experts__item-info">
+                          <div class="experts__item-info__top">
+                            <div class="experts__item-title">Kirsty	Bannister</div>
+                            <div class="experts__item-position">King’s College London Physicians</div>
+                          </div><a class="experts__item-link" href="#">View CV</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="experts__item">
+                        <div class="experts__item-photo"><img src="img/experts/05.jpg" alt=""/></div>
+                        <div class="experts__item-info">
+                          <div class="experts__item-info__top">
+                            <div class="experts__item-title">An	De Groef</div>
+                            <div class="experts__item-position">Antwerp University, Belgium Physiotherapists</div>
+                          </div><a class="experts__item-link" href="#">View CV</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="experts__item">
+                        <div class="experts__item-photo"><img src="img/experts/06.jpg" alt=""/></div>
+                        <div class="experts__item-info">
+                          <div class="experts__item-info__top">
+                            <div class="experts__item-title">Petra Mandysova</div>
+                            <div class="experts__item-position">University Pardubice Nurses</div>
+                          </div><a class="experts__item-link" href="#">View CV</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="experts__item">
+                        <div class="experts__item-photo"><img src="img/experts/01.jpg" alt=""/></div>
+                        <div class="experts__item-info">
+                          <div class="experts__item-info__top">
+                            <div class="experts__item-title">Dominic Aldington</div>
+                            <div class="experts__item-position">The Pain Team Physicians</div>
+                          </div><a class="experts__item-link" href="#">View CV</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="experts__item">
+                        <div class="experts__item-photo"><img src="img/experts/02.jpg" alt=""/></div>
+                        <div class="experts__item-info">
+                          <div class="experts__item-info__top">
+                            <div class="experts__item-title">Sam H Ahmedzai</div>
+                            <div class="experts__item-position">The University of Sheffield Physicians</div>
+                          </div><a class="experts__item-link" href="#">View CV</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="experts__item">
+                        <div class="experts__item-photo"><img src="img/experts/03.jpg" alt=""/></div>
+                        <div class="experts__item-info">
+                          <div class="experts__item-info__top">
+                            <div class="experts__item-title">Emma	Briggs</div>
+                            <div class="experts__item-position">King’s College London Nurses</div>
+                          </div><a class="experts__item-link" href="#">View CV</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="experts__item">
+                        <div class="experts__item-photo"><img src="img/experts/04.jpg" alt=""/></div>
+                        <div class="experts__item-info">
+                          <div class="experts__item-info__top">
+                            <div class="experts__item-title">Kirsty	Bannister</div>
+                            <div class="experts__item-position">King’s College London Physicians</div>
+                          </div><a class="experts__item-link" href="#">View CV</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="experts__item">
+                        <div class="experts__item-photo"><img src="img/experts/05.jpg" alt=""/></div>
+                        <div class="experts__item-info">
+                          <div class="experts__item-info__top">
+                            <div class="experts__item-title">An	De Groef</div>
+                            <div class="experts__item-position">Antwerp University, Belgium Physiotherapists</div>
+                          </div><a class="experts__item-link" href="#">View CV</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="experts__item">
+                        <div class="experts__item-photo"><img src="img/experts/06.jpg" alt=""/></div>
+                        <div class="experts__item-info">
+                          <div class="experts__item-info__top">
+                            <div class="experts__item-title">Petra Mandysova</div>
+                            <div class="experts__item-position">University Pardubice Nurses</div>
+                          </div><a class="experts__item-link" href="#">View CV</a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="experts__item">
-                  <div class="experts__item-photo"><img src="img/experts/02.jpg" alt=""/></div>
-                  <div class="experts__item-info">
-                    <div class="experts__item-info__top">
-                      <div class="experts__item-title">Sam H Ahmedzai</div>
-                      <div class="experts__item-position">The University of Sheffield Physicians</div>
-                    </div><a class="experts__item-link" href="#">View CV</a>
-                  </div>
-                </div>
-                <div class="experts__item">
-                  <div class="experts__item-photo"><img src="img/experts/03.jpg" alt=""/></div>
-                  <div class="experts__item-info">
-                    <div class="experts__item-info__top">
-                      <div class="experts__item-title">Emma	Briggs</div>
-                      <div class="experts__item-position">King’s College London Nurses</div>
-                    </div><a class="experts__item-link" href="#">View CV</a>
-                  </div>
-                </div>
-                <div class="experts__item">
-                  <div class="experts__item-photo"><img src="img/experts/04.jpg" alt=""/></div>
-                  <div class="experts__item-info">
-                    <div class="experts__item-info__top">
-                      <div class="experts__item-title">Kirsty	Bannister</div>
-                      <div class="experts__item-position">King’s College London Physicians</div>
-                    </div><a class="experts__item-link" href="#">View CV</a>
-                  </div>
-                </div>
-                <div class="experts__item">
-                  <div class="experts__item-photo"><img src="img/experts/05.jpg" alt=""/></div>
-                  <div class="experts__item-info">
-                    <div class="experts__item-info__top">
-                      <div class="experts__item-title">An	De Groef</div>
-                      <div class="experts__item-position">Antwerp University, Belgium Physiotherapists</div>
-                    </div><a class="experts__item-link" href="#">View CV</a>
-                  </div>
-                </div>
-                <div class="experts__item">
-                  <div class="experts__item-photo"><img src="img/experts/06.jpg" alt=""/></div>
-                  <div class="experts__item-info">
-                    <div class="experts__item-info__top">
-                      <div class="experts__item-title">Petra Mandysova</div>
-                      <div class="experts__item-position">University Pardubice Nurses</div>
-                    </div><a class="experts__item-link" href="#">View CV</a>
+                  <div class="experts__slider-nav__wrap"><a class="button button--blue" href="#">View Full list</a>
+                    <div class="experts__slider-nav">
+                      <div class="slidePrev-btn"></div>
+                      <div class="slideNext-btn"></div>
+                    </div>
                   </div>
                 </div>
               </div>
