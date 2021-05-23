@@ -1,0 +1,68 @@
+.fees {
+    padding-top: 70px;
+    padding-bottom: 85px;
+    position: relative;
+
+    &.-light-blue {
+        background: rgba(36, 86, 117, 0.4);
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 1.2;
+        margin-bottom: 78px;
+    }
+
+    &__info {
+        position: relative;
+        height: 100%;
+    }
+
+    &__numbers {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #ffffff;
+
+        &-item {
+            &:not(:last-child) {
+                margin-bottom: 60px;
+            }
+
+            &__num {
+                font-family: $primary-font;
+                font-size: 100px;
+                font-weight: 700;
+
+                span {
+                    font-size: 56px;
+                }
+            }
+
+            &__text {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 28px;
+                max-width: 240px;
+            }
+        }
+    }
+
+    &__image-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+
+        img {
+            position: absolute;
+            mix-blend-mode: luminosity;
+            opacity: 0.9;
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+        }
+    }
+}
