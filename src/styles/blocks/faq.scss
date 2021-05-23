@@ -2,6 +2,11 @@
     padding-top: 80px;
     padding-bottom: 40px;
 
+    @media (max-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
     &-drawer {
         &__content-wrapper {
             font-size: 16px;

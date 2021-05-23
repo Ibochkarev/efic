@@ -4,8 +4,16 @@
     color: #ffffff;
     background-color: $blue;
 
+    @media (max-width: 768px) {
+        padding-top: 60px;
+    }
+
     &__top {
         padding-bottom: 100px;
+
+        @media (max-width: 768px) {
+            padding-bottom: 40px;
+        }
     }
 
     &__title {
@@ -15,6 +23,10 @@
         font-weight: 700;
         text-transform: uppercase;
         color: $orange;
+
+        @media (max-width: 768px) {
+            font-size: 18px;
+        }
 
         &.-white {
             color: #ffffff;
@@ -32,19 +44,25 @@
         font-weight: 300;
         line-height: 1.4;
         opacity: 0.8;
+
+        @media (max-width: 575px) {
+            margin-bottom: 25px;
+            text-align: center;
+        }
     }
 
     &__contacts {
         &-item {
-            font-weight: 300;
             font-size: 16px;
+            font-weight: 300;
+
             &:not(:last-child) {
                 margin-bottom: 10px;
             }
 
             a {
-                color: #ffffff;
                 font-weight: 700;
+                color: #ffffff;
 
                 &:hover {
                     text-decoration: underline;
@@ -58,6 +76,10 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
+
+    @media (max-width: 768px) {
+        margin-bottom: 40px;
+    }
 
     &__item {
         &:not(:last-child) {
@@ -88,6 +110,12 @@
     justify-content: flex-end;
     list-style: none;
 
+    @media (max-width: 575px) {
+        justify-content: center;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
     &__item {
         &:not(:first-child) {
             margin-left: 20px;
@@ -95,8 +123,8 @@
 
         &-link {
             img {
-                height: 32px;
                 width: 32px;
+                height: 32px;
             }
 
             &:hover {

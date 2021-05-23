@@ -12,6 +12,18 @@
     border-radius: 6px;
     transition: all 0.25s ease-in-out;
 
+    @media (max-width: 768px) {
+        height: 45px;
+        font-size: 18px;
+        line-height: 45px;
+    }
+
+    @media (max-width: 575px) {
+        height: 35px;
+        font-size: 16px;
+        line-height: 35px;
+    }
+
     &--orange {
         background-color: $orange;
         border-color: $orange;
@@ -37,16 +49,26 @@
     display: flex;
     align-items: center;
 
+    @media (max-width: 575px) {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
     .button {
         margin-right: 42px;
+
+        @media (max-width: 575px) {
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
     }
 }
 
 .link {
     position: relative;
     font-size: 16px;
-    line-height: 1.2;
     font-weight: 500;
+    line-height: 1.2;
     color: $blue;
 
     &:hover::after {
@@ -55,16 +77,16 @@
 
     &::after {
         position: absolute;
-        content: '';
+        top: 50%;
+        right: -45px;
         display: block;
         width: 36px;
         height: 6px;
+        transform: translateY(-50%);
         transition: all 0.5s ease-in-out;
+        content: '';
         background-image: url("data:image/svg+xml,%3Csvg width='37' height='8' viewBox='0 0 37 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M36.3536 4.35355C36.5488 4.15829 36.5488 3.84171 36.3536 3.64645L33.1716 0.464466C32.9763 0.269204 32.6597 0.269204 32.4645 0.464466C32.2692 0.659728 32.2692 0.976311 32.4645 1.17157L35.2929 4L32.4645 6.82843C32.2692 7.02369 32.2692 7.34027 32.4645 7.53553C32.6597 7.7308 32.9763 7.7308 33.1716 7.53553L36.3536 4.35355ZM0 4.5H36V3.5H0V4.5Z' fill='%23245675'/%3E%3C/svg%3E%0A");
         background-repeat: no-repeat;
         background-size: contain;
-        right: -45px;
-        top: 50%;
-        transform: translateY(-50%);
     }
 }

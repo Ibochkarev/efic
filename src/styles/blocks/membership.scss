@@ -50,6 +50,11 @@
             height: 200px;
             padding-right: 5px;
             padding-left: 5px;
+            margin-bottom: 20px;
+
+            @media (max-width: 575px) {
+                height: 180px;
+            }
         }
 
         &-icon {
@@ -59,6 +64,10 @@
             @media (max-width: 768px) {
                 height: 64px;
                 margin-bottom: 15px;
+            }
+
+            @media (max-width: 575px) {
+                height: 48px;
             }
 
             img {
@@ -76,6 +85,10 @@
 
             @media (max-width: 768px) {
                 font-size: 16px;
+            }
+
+            @media (max-width: 575px) {
+                font-size: 14px;
             }
         }
     }

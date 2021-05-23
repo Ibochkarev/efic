@@ -8,7 +8,19 @@
         padding-bottom: 60px;
     }
 
+    @media (max-width: 768px) {
+        .button-wrapper {
+            margin-bottom: 35px;
+        }
+    }
+
     &.fees-01 {
+        @media (max-width: 768px) {
+            .button-wrapper {
+                margin-top: 35px;
+                margin-bottom: 0;
+            }
+        }
         &::after {
             position: absolute;
             bottom: -110px;
@@ -28,23 +40,14 @@
                 height: 120px;
             }
         }
-
-        @media (max-width: 768px) {
-            .button-wrapper {
-                margin-top: 35px;
-                margin-bottom: 0;
-            }
-        }
-    }
-
-    @media (max-width: 768px) {
-        .button-wrapper {
-            margin-bottom: 35px;
-        }
     }
 
     &.-light-blue {
         background: rgba(36, 86, 117, 0.4);
+
+        .fees__numbers {
+            color: #fff;
+        }
     }
 
     &__text {
@@ -57,18 +60,26 @@
             margin-bottom: 35px;
             font-size: 18px;
         }
+
+        @media (max-width: 575px) {
+            font-size: 14px;
+        }
     }
 
     &__info {
         position: relative;
         height: 100%;
+
+        @media (max-width: 768px) {
+            height: auto;
+        }
     }
 
     &__numbers {
         position: absolute;
         top: 50%;
         right: 0;
-        color: #ffffff;
+        color: $orange;
         transform: translateY(-50%);
 
         @media (max-width: 768px) {
@@ -84,11 +95,19 @@
                 width: calc(100% / 2 - 20px);
             }
 
+            @media (max-width: 575px) {
+                width: 100%;
+            }
+
             &:not(:last-child) {
                 margin-bottom: 60px;
 
                 @media (max-width: 768px) {
                     margin-bottom: 35px;
+                }
+
+                @media (max-width: 575px) {
+                    margin-bottom: 25px;
                 }
             }
 
@@ -96,6 +115,10 @@
                 font-family: $primary-font;
                 font-size: 100px;
                 font-weight: 700;
+
+                @media (max-width: 575px) {
+                    font-size: 75px;
+                }
 
                 span {
                     font-size: 56px;
@@ -107,6 +130,17 @@
                 font-size: 24px;
                 font-weight: 700;
                 line-height: 28px;
+
+                @media (max-width: 575px) {
+                    font-size: 14px;
+                    line-height: 1.2;
+                    max-width: 50%;
+
+                    br {
+                        display: none;
+                        max-width: 75%;
+                    }
+                }
             }
         }
     }

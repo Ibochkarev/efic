@@ -46,5 +46,14 @@ a {
         line-height: 39px;
         margin-bottom: 24px;
         text-transform: uppercase;
+
+        @media (max-width: 575px) {
+            font-size: 26px;
+            line-height: 1.33;
+        }
+
+        @media (max-width: 575px) {
+            font-size: 22px;
+        }
     }
 }

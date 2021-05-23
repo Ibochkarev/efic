@@ -19,6 +19,10 @@
                 font-size: 18px;
             }
 
+            @media (max-width: 575px) {
+                font-size: 14px;
+            }
+
             &:last-child {
                 margin-bottom: 0;
             }

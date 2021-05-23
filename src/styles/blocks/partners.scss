@@ -2,11 +2,16 @@
     padding-top: 120px;
     padding-bottom: 90px;
 
+    @media (max-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
     &__wrap {
         display: flex;
         align-items: center;
-        flex-wrap: wrap;
         justify-content: space-around;
+        flex-wrap: wrap;
     }
 
     &__item {
@@ -15,6 +20,11 @@
         justify-content: center;
         width: calc(25% - 10px);
         margin-bottom: 38px;
+
+        @media (max-width: 575px) {
+            margin: 15px;
+            width: calc(100 / 3 - 15px);
+        }
 
         img {
             display: block;
