@@ -1,0 +1,26 @@
+.partners {
+    padding-top: 120px;
+    padding-bottom: 90px;
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: calc(25% - 10px);
+        margin-bottom: 38px;
+
+        img {
+            display: block;
+            width: auto;
+            height: 100%;
+            max-height: 100px;
+        }
+    }
+}

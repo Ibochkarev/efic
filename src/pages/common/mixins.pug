@@ -45,3 +45,6 @@ mixin about(data)
         .about__item-title!=data.name
         .about__item-text!=data.text
 
+mixin partner(data)
+  .partners__item
+    img(src='img/' + data.img alt="" loading="lazy")
