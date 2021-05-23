@@ -17,7 +17,7 @@ mixin expert(data)
         a.experts__item-link(href='#') View CV
 
 mixin plan(data)
-  .col-12.col-sm-6.col-md-3
+  .col-12.col-md-6.col-lg-3
     .plans__item
       .plans__item-name!=data.name
       .plans__item-text!=data.text
@@ -27,7 +27,7 @@ mixin plan(data)
       .plans__item-note!=data.note
 
 mixin who(data)
-  .col-12.col-sm-6.col-md-3
+  .col-12.col-md-6.col-lg-3
     .who__item
       .who__item-image
         img(src='img/' + data.img alt="")
@@ -35,7 +35,7 @@ mixin who(data)
         span!=data.name
 
 mixin about(data)
-  .col-12.col-sm-6.col-md-4
+  .col-12.col-md-6.col-lg-4
     .about__item
       .about__item-top
         .about__item-num
