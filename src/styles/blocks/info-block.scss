@@ -2,6 +2,11 @@
     padding-top: 160px;
     padding-bottom: 160px;
 
+    @media (max-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
     &__wrap {
         display: flex;
         align-items: center;
@@ -17,6 +22,11 @@
             height: 120px;
             margin-bottom: 24px;
 
+            @media (max-width: 768px) {
+                height: 90px;
+                margin-bottom: 15px;
+            }
+
             img {
                 width: auto;
                 height: 100%;
@@ -30,6 +40,10 @@
             line-height: 29px;
             text-transform: uppercase;
             color: $blue;
+
+            @media (max-width: 768px) {
+                font-size: 16px;
+            }
         }
     }
 }

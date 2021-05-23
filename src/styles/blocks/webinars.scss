@@ -2,11 +2,21 @@
     padding-top: 160px;
     padding-bottom: 80px;
 
+    @media (max-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
     &__list {
         display: flex;
         align-items: stretch;
         justify-content: space-between;
         margin-bottom: 60px;
+
+        @media (max-width: 768px) {
+            margin-bottom: 35px;
+            flex-wrap: wrap;
+        }
     }
 
     &__item {
@@ -16,6 +26,11 @@
         border-radius: 6px;
         background-size: cover;
         mix-blend-mode: luminosity;
+
+        @media (max-width: 768px) {
+            width: 100%;
+            margin-bottom: 25px;
+        }
 
         &-info {
             z-index: 1;

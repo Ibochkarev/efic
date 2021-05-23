@@ -1,25 +1,35 @@
 .statistics {
-    border-radius: 6px;
     padding-top: 80px;
     padding-bottom: 160px;
+    border-radius: 6px;
+
+    @media (max-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 
     &.-orange {
         background: rgba(247, 147, 30, 0.3);
     }
 
     &__text {
-        font-weight: 300;
-        font-size: 24px;
-        line-height: 1.2;
         margin-bottom: 60px;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 1.2;
+
+        @media (max-width: 768px) {
+            margin-bottom: 35px;
+            font-size: 18px;
+        }
     }
 
     .-reverse {
         flex-direction: row-reverse;
 
         .statistics__image {
-            left: 0;
             right: inherit;
+            left: 0;
         }
 
         .statistics__numbers {
@@ -30,15 +40,23 @@
     &__info {
         position: relative;
         height: 100%;
+
+        @media (max-width: 768px) {
+            margin-top: 35px;
+        }
     }
 
     &__image {
-        position: absolute;
-        bottom: 0;
-        right: 0;
         z-index: -1;
-        opacity: 0.2;
+        position: absolute;
+        right: 0;
+        bottom: 0;
         width: 345px;
+        opacity: 0.2;
+
+        @media (max-width: 768px) {
+            width: 180px;
+        }
 
         img {
             width: 100%;
@@ -52,30 +70,46 @@
         flex-wrap: wrap;
 
         &-item {
-            color: $orange;
-            margin-bottom: 50px;
             width: calc(100% / 2 - 40px);
+            margin-bottom: 50px;
+            color: $orange;
+
+            @media (max-width: 768px) {
+                margin-bottom: 35px;
+            }
 
             &__num {
-                font-family: $primary-font;
-                font-weight: 700;
-                font-size: 100px;
-                line-height: 90%;
                 margin-bottom: 10px;
+                font-family: $primary-font;
+                font-size: 100px;
+                font-weight: 700;
+                line-height: 90%;
+
+                @media (max-width: 768px) {
+                    font-size: 80px;
+                }
 
                 span {
                     font-size: 54px;
+
+                    @media (max-width: 768px) {
+                        font-size: 22px;
+                    }
                 }
 
                 &.-text {
                     font-size: 52px;
+
+                    @media (max-width: 768px) {
+                        font-size: 42px;
+                    }
                 }
             }
 
             &__text {
+                font-size: 24px;
                 font-weight: 700;
                 line-height: 28px;
-                font-size: 24px;
             }
         }
     }
