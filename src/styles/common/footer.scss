@@ -28,10 +28,25 @@
     }
 
     &__copyright {
-        font-size: 8px;
+        font-size: 12px;
         font-weight: 300;
         line-height: 1.4;
         opacity: 0.8;
+    }
+
+    &__contacts {
+        &-item {
+            font-weight: 300;
+            font-size: 16px;
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+
+            a {
+                color: #ffffff;
+                font-weight: 700;
+            }
+        }
     }
 }
 
@@ -59,6 +74,30 @@
             color: #ffffff;
             opacity: 1;
             transition: opacity 0.5 ease-in-out;
+        }
+    }
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+
+    &__item {
+        &:not(:first-child) {
+            margin-left: 20px;
+        }
+
+        &-link {
+            img {
+                height: 32px;
+                width: 32px;
+            }
+
+            &:hover {
+                opacity: 0.8;
+            }
         }
     }
 }
