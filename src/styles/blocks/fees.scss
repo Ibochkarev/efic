@@ -132,9 +132,9 @@
                 line-height: 28px;
 
                 @media (max-width: 575px) {
+                    max-width: 50%;
                     font-size: 14px;
                     line-height: 1.2;
-                    max-width: 50%;
 
                     br {
                         display: none;

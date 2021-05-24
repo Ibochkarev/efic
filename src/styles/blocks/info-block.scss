@@ -15,8 +15,8 @@
         margin: 0 auto;
 
         @media (max-width: 575px) {
-            flex-wrap: wrap;
             justify-content: center;
+            flex-wrap: wrap;
         }
     }
 

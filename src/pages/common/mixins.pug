@@ -1,5 +1,5 @@
 mixin membership(data)
-  .membership__item
+  a.membership__item(href!=data.section)
     .membership__item-info
       .membership__item-icon
         img(src='img/' + data.img alt="")
@@ -23,12 +23,12 @@ mixin plan(data)
       .plans__item-text!=data.text
       .plans__item-price!=data.price
       .plans__item-price__text!=data.priceText
-      a.plans__item-button.button.button--orange Join Nov
+      a.plans__item-button.button.button--orange Join Now
       .plans__item-note!=data.note
 
 mixin who(data)
   .col-12.col-md-6.col-lg-3
-    .who__item
+    a.who__item(href="#")
       .who__item-image
         img(src='img/' + data.img alt="")
       .who__item-title

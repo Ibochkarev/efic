@@ -5,12 +5,23 @@ document.addEventListener(`DOMContentLoaded`, () => {
     const expertsSlider = new Swiper(`.expert-slider`, {
         loop: false,
         speed: 800,
-        slidesPerView: 3,
-        slidesPerColumn: 2,
-        spaceBetween: 30,
+        slidesPerView: 1,
+        slidesPerColumn: 1,
         navigation: {
             nextEl: '.slideNext-btn',
             prevEl: '.slidePrev-btn',
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+                slidesPerColumn: 1,
+                spaceBetween: 30,
+            },
+            768: {
+                slidesPerView: 3,
+                slidesPerColumn: 2,
+                spaceBetween: 30,
+            },
         },
     })
 

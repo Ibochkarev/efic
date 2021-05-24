@@ -7,6 +7,12 @@
         padding-bottom: 20px;
     }
 
+    @media (max-width: 768px) {
+        .col-md-6 {
+            margin-bottom: 40px;
+        }
+    }
+
     &__introtext {
         width: 100%;
         max-width: 420px;
@@ -29,12 +35,6 @@
             @media (max-width: 768px) {
                 flex-wrap: wrap;
             }
-        }
-    }
-
-    @media (max-width: 768px) {
-        .col-md-6 {
-            margin-bottom: 40px;
         }
     }
 
