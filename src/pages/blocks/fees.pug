@@ -9,8 +9,10 @@
       .col-md-12.col-lg-8
         +e.info
           +e.image-block
-            img(src="img/fees/01.jpg", alt="")
-            span Dublin
+            +e.image
+              +e.image-bg(style="background-image: url('img/fees/01.jpg')")
+              +e.overlay
+              span Dublin
           +e.numbers
             +e.numbers-item
               +e.numbers-item__num 2000

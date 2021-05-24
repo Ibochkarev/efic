@@ -12,7 +12,9 @@
       .col-md-12.col-lg-6
         +e.info
           +e.image-block
-            img(src="img/fees/02.jpg", alt="")
+            +e.image
+              +e.image-bg(style="background-image: url('img/fees/02.jpg')")
+              +e.overlay
           +e.numbers
             +e.numbers-item
               +e.numbers-item__num -25

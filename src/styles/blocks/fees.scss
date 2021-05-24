@@ -21,6 +21,7 @@
                 margin-bottom: 0;
             }
         }
+
         &::after {
             position: absolute;
             bottom: -110px;
@@ -38,6 +39,17 @@
                 bottom: -60px;
                 width: 120px;
                 height: 120px;
+            }
+        }
+        .fees__image-bg {
+            height: 450px;
+
+            @media (max-width: 768px) {
+                height: 350px;
+            }
+
+            @media (max-width: 575px) {
+                height: 250px;
             }
         }
     }
@@ -116,8 +128,12 @@
                 font-size: 100px;
                 font-weight: 700;
 
+                @media (max-width: 768px) {
+                    font-size: 70px;
+                }
+
                 @media (max-width: 575px) {
-                    font-size: 75px;
+                    font-size: 55px;
                 }
 
                 span {
@@ -146,6 +162,7 @@
     }
 
     &__image-block {
+        position: relative;
         display: flex;
         justify-content: center;
         height: 100%;
@@ -154,18 +171,49 @@
         @media (max-width: 768px) {
             height: auto;
         }
+    }
 
-        img {
-            position: absolute;
+    &__image {
+        overflow: hidden;
+        position: relative;
+        border-radius: 6px;
+
+        &-bg {
+            display: block;
             width: 100%;
-            height: auto;
-            border-radius: 6px;
-            opacity: 0.9;
-            mix-blend-mode: luminosity;
+            height: 390px;
+            background-size: cover;
+            background-repeat: no-repeat;
 
             @media (max-width: 768px) {
-                position: relative;
+                height: 300px;
+            }
+
+            @media (max-width: 575px) {
+                height: 250px;
             }
         }
+
+        span {
+            z-index: 1;
+            position: absolute;
+            bottom: -10px;
+            left: 10px;
+            font-family: $primary-font;
+            font-size: 100px;
+            font-weight: 700;
+            color: #ffffff;
+            opacity: 0.3;
+        }
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(36, 86, 117, 0.6);
+        content: ' ';
     }
 }
