@@ -26,7 +26,8 @@ document.addEventListener(`DOMContentLoaded`, () => {
     })
 
     const mobileMenu = document.querySelector(`.mobile-menu`),
-        menuBtn = document.querySelector(`.header__btn-menu`)
+        menuBtn = document.querySelector(`.header__btn-menu`),
+        menuLink = document.querySelectorAll(`.mobile-menu__list-link`)
 
     menuBtn.addEventListener(`click`, function () {
         if (mobileMenu.classList.contains(`is-active`)) {
@@ -36,5 +37,12 @@ document.addEventListener(`DOMContentLoaded`, () => {
             mobileMenu.classList.add(`is-active`)
             menuBtn.classList.add(`is-open`)
         }
+    })
+
+    menuLink.forEach((el) => {
+        el.addEventListener(`click`, () => {
+            mobileMenu.classList.remove(`is-active`)
+            menuBtn.classList.remove(`is-open`)
+        })
     })
 })

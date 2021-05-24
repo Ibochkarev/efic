@@ -2,8 +2,26 @@
   .container
     .row
       .col-12
-        +e.A.logo(href="#")
-          img(src="img/global/logo.svg", alt="")
-        +e.BUTTON.btn-menu(type="button")
-          span
-          span
+        +e.wrap
+          +e.A.logo(href="#")
+            img(src="img/global/logo.svg", alt="")
+          +e.menu-wrap
+            +e.search-btn
+            +e.NAV.menu
+              +e.UL.menu-list
+                +e.LI.menu-list__item
+                  +e.A.menu-list__link(href="#experts") Experts
+                +e.LI.menu-list__item
+                  +e.A.menu-list__link(href="#events") Events
+                +e.LI.menu-list__item
+                  +e.A.menu-list__link(href="#benefit") Benefit
+                +e.LI.menu-list__item
+                  +e.A.menu-list__link(href="#pricing") Princing
+                +e.LI.menu-list__item
+                  +e.A.menu-list__link(href="#about") About
+                +e.LI.menu-list__item
+                  +e.A.menu-list__link(href="#faq") FAQ
+
+          +e.BUTTON.btn-menu(type="button")
+            span
+            span

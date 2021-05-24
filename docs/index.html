@@ -42,20 +42,42 @@
   <body>
     <div class="mobile-menu">
       <ul class="mobile-menu__list">
-        <li class="mobile-menu__list-item"><a class="mobile-menu__list-link" href="#">Experts</a></li>
-        <li class="mobile-menu__list-item"><a class="mobile-menu__list-link" href="#">Events</a></li>
-        <li class="mobile-menu__list-item"><a class="mobile-menu__list-link" href="#">Benefit</a></li>
-        <li class="mobile-menu__list-item"><a class="mobile-menu__list-link" href="#">Pricing</a></li>
-        <li class="mobile-menu__list-item"><a class="mobile-menu__list-link" href="#">About</a></li>
-        <li class="mobile-menu__list-item"><a class="mobile-menu__list-link" href="#">FAQ</a></li>
+        <li class="mobile-menu__list-item"><a class="mobile-menu__list-link" href="#experts">Experts</a></li>
+        <li class="mobile-menu__list-item"><a class="mobile-menu__list-link" href="#events">Events</a></li>
+        <li class="mobile-menu__list-item"><a class="mobile-menu__list-link" href="#benefit">Benefit</a></li>
+        <li class="mobile-menu__list-item"><a class="mobile-menu__list-link" href="#pricing">Pricing</a></li>
+        <li class="mobile-menu__list-item"><a class="mobile-menu__list-link" href="#about">About</a></li>
+        <li class="mobile-menu__list-item"><a class="mobile-menu__list-link" href="#faq">FAQ</a></li>
       </ul>
     </div>
     <header class="header">
       <div class="container">
         <div class="row">
-          <div class="col-12"><a class="header__logo" href="#"><img src="img/global/logo.svg" alt=""></a>
-            <button class="header__btn-menu" type="button"><span></span><span></span>
-            </button>
+          <div class="col-12">
+            <div class="header__wrap"><a class="header__logo" href="#"><img src="img/global/logo.svg" alt=""></a>
+              <div class="header__menu-wrap">
+                <div class="header__search-btn">
+                </div>
+                <nav class="header__menu">
+                  <ul class="header__menu-list">
+                    <li class="header__menu-list__item"><a class="header__menu-list__link" href="#experts">Experts</a>
+                    </li>
+                    <li class="header__menu-list__item"><a class="header__menu-list__link" href="#events">Events</a>
+                    </li>
+                    <li class="header__menu-list__item"><a class="header__menu-list__link" href="#benefit">Benefit</a>
+                    </li>
+                    <li class="header__menu-list__item"><a class="header__menu-list__link" href="#pricing">Princing</a>
+                    </li>
+                    <li class="header__menu-list__item"><a class="header__menu-list__link" href="#about">About</a>
+                    </li>
+                    <li class="header__menu-list__item"><a class="header__menu-list__link" href="#faq">FAQ</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <button class="header__btn-menu" type="button"><span></span><span></span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -98,7 +120,7 @@
           </div>
         </div>
       </div>
-      <section class="experts section">
+      <section class="experts section" id="experts">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -260,7 +282,7 @@
           </div>
         </div>
       </section>
-      <section class="webinars section" id="webinars">
+      <section class="webinars section" id="events">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -298,7 +320,7 @@
           </div>
         </div>
       </section>
-      <section class="membership section">
+      <section class="membership section" id="benefit">
         <div class="membership__wrap">
           <div class="container">
             <div class="row">
@@ -321,13 +343,13 @@
                         <div class="membership__item-title">Online school</div>
                       </div></a>
                   </div>
-                  <div class="col-6 col-md-3"><a class="membership__item" href="#discounts">
+                  <div class="col-6 col-md-3"><a class="membership__item" href="#pricing">
                       <div class="membership__item-info">
                         <div class="membership__item-icon"><img src="img/membership/03.svg" alt=""/></div>
                         <div class="membership__item-title">Discounts</div>
                       </div></a>
                   </div>
-                  <div class="col-6 col-md-3"><a class="membership__item" href="#webinars">
+                  <div class="col-6 col-md-3"><a class="membership__item" href="#events">
                       <div class="membership__item-info">
                         <div class="membership__item-icon"><img src="img/membership/04.svg" alt=""/></div>
                         <div class="membership__item-title">Webinars</div>
@@ -506,7 +528,7 @@
           </div>
         </div>
       </section>
-      <section class="plans section" id="discounts">
+      <section class="plans section" id="pricing">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -559,7 +581,7 @@
           </div>
         </div>
       </section>
-      <section class="about section">
+      <section class="about section" id="about">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -614,7 +636,7 @@
           </div>
         </div>
       </section>
-      <section class="faq section">
+      <section class="faq section" id="faq">
         <div class="container">
           <div class="row">
             <div class="col-12">
