@@ -95,6 +95,12 @@
             display: block;
         }
 
+        &.is-open {
+            span {
+                background: #ffffff;
+            }
+        }
+
         span {
             position: absolute;
             left: 0;
