@@ -56,7 +56,7 @@
             }
 
             @media (max-width: 575px) {
-                height: 250px;
+                height: 170px;
             }
         }
 
@@ -65,7 +65,7 @@
                 position: relative;
                 top: 0;
                 display: flex;
-                color: $orange;
+                color: #ffffff;
                 transform: none;
                 flex-wrap: wrap;
             }
@@ -151,7 +151,7 @@
                 width: calc(100% / 2 - 20px);
             }
 
-            @media (max-width: 575px) {
+            @media (max-width: 375px) {
                 width: 100%;
             }
 
@@ -189,6 +189,7 @@
 
                 @media (max-width: 575px) {
                     max-width: 50%;
+                    font-weight: 300;
                     font-size: 14px;
                     line-height: 1.2;
 

@@ -82,7 +82,7 @@
             }
 
             @media (max-width: 575px) {
-                width: 100%;
+                margin-bottom: 25px;
             }
 
             &__num {
@@ -94,6 +94,10 @@
 
                 @media (max-width: 768px) {
                     font-size: 80px;
+                }
+
+                @media (max-width: 575px) {
+                    font-size: 50px;
                 }
 
                 span {
@@ -111,6 +115,10 @@
                     @media (max-width: 768px) {
                         font-size: 32px;
                     }
+
+                    @media (max-width: 575px) {
+                        font-size: 24px;
+                    }
                 }
             }
 
@@ -118,6 +126,12 @@
                 font-size: 24px;
                 font-weight: 700;
                 line-height: 28px;
+
+                @media (max-width: 575px) {
+                    font-size: 16px;
+                    line-height: 1.2;
+                    font-weight: 300;
+                }
             }
         }
     }
