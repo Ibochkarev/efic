@@ -1,7 +1,21 @@
+import $ from '../local_modules/jquery/dist/jquery.min'
 import { Swiper, Mousewheel, Navigation } from 'swiper'
 Swiper.use([Mousewheel, Navigation])
 
 document.addEventListener(`DOMContentLoaded`, () => {
+    $('.video-player')
+        .parent()
+        .click(function () {
+            if ($(this).children('.video-player').get(0).paused) {
+                $(this).children('.video-player').get(0).play()
+            } else {
+                $(this).children('.video-player').get(0).pause()
+                $(this).children('.video__overlay').fadeIn()
+            }
+            $('.video__overlay').addClass('is-hidden')
+            $('.video__play').addClass('is-hidden')
+        })
+
     const expertsSlider = new Swiper(`.expert-slider`, {
         loop: false,
         speed: 800,
