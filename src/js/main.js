@@ -21,24 +21,24 @@ document.addEventListener(`DOMContentLoaded`, () => {
         },
     })
 
-    const mobileMenu = document.querySelector(`.mobile-menu`),
-        menuBtn = document.querySelector(`.header__btn-menu`),
-        menuLink = document.querySelectorAll(`.mobile-menu__list-link`)
+    // const mobileMenu = document.querySelector(`.mobile-menu`),
+    //     menuBtn = document.querySelector(`.header__btn-menu`),
+    //     menuLink = document.querySelectorAll(`.mobile-menu__list-link`)
 
-    menuBtn.addEventListener(`click`, function () {
-        if (mobileMenu.classList.contains(`is-active`)) {
-            mobileMenu.classList.remove(`is-active`)
-            menuBtn.classList.remove(`is-open`)
-        } else {
-            mobileMenu.classList.add(`is-active`)
-            menuBtn.classList.add(`is-open`)
-        }
-    })
+    // menuBtn.addEventListener(`click`, function () {
+    //     if (mobileMenu.classList.contains(`is-active`)) {
+    //         mobileMenu.classList.remove(`is-active`)
+    //         menuBtn.classList.remove(`is-open`)
+    //     } else {
+    //         mobileMenu.classList.add(`is-active`)
+    //         menuBtn.classList.add(`is-open`)
+    //     }
+    // })
 
-    menuLink.forEach((el) => {
-        el.addEventListener(`click`, () => {
-            mobileMenu.classList.remove(`is-active`)
-            menuBtn.classList.remove(`is-open`)
-        })
-    })
+    // menuLink.forEach((el) => {
+    //     el.addEventListener(`click`, () => {
+    //         mobileMenu.classList.remove(`is-active`)
+    //         menuBtn.classList.remove(`is-open`)
+    //     })
+    // })
 })

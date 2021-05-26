@@ -43,6 +43,18 @@
                 max-height: 360px;
                 border-top-left-radius: 6px;
                 border-top-right-radius: 6px;
+
+                @media (max-width: 768px) {
+                    max-height: 280px;
+                }
+
+                @media (max-width: 410px) {
+                    height: 210px;
+                }
+
+                @media (max-width: 375px) {
+                    height: 180px;
+                }
             }
         }
 
