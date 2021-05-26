@@ -8,14 +8,20 @@
         padding-bottom: 60px;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
+        .button-wrapper {
+            margin-bottom: 35px;
+        }
+    }
+
+    @media (max-width: 992px) {
         .button-wrapper {
             margin-bottom: 35px;
         }
     }
 
     &.fees-01 {
-        @media (max-width: 768px) {
+        @media (max-width: 992px) {
             .button-wrapper {
                 margin-top: 35px;
                 margin-bottom: 0;
@@ -41,6 +47,7 @@
                 height: 120px;
             }
         }
+
         .fees__image-bg {
             height: 450px;
 
@@ -52,25 +59,70 @@
                 height: 250px;
             }
         }
+
+        .fees__numbers {
+            @media (max-width: 992px) {
+                position: relative;
+                top: 0;
+                display: flex;
+                color: $orange;
+                transform: none;
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    &.fees-02 {
+        .is-mobile {
+            display: none;
+
+            @media (max-width: 992px) {
+                display: flex;
+            }
+        }
+
+        .is-desktop {
+            @media (max-width: 992px) {
+                display: none;
+            }
+        }
+
+        .fees__numbers {
+            margin-left: 20px;
+
+            @media (max-width: 575px) {
+                top: 20px;
+                transform: none;
+            }
+
+            &-item {
+                width: 100%;
+            }
+        }
+
+        .button-wrapper {
+            margin-top: 35px;
+            margin-bottom: 0;
+        }
     }
 
     &.-light-blue {
         background: rgba(36, 86, 117, 0.4);
 
         .fees__numbers {
-            color: #fff;
+            color: #fffffff;
         }
     }
 
     &__text {
-        margin-bottom: 78px;
-        font-size: 24px;
+        margin-bottom: 60px;
+        font-size: 18px;
         font-weight: 300;
         line-height: 1.2;
 
-        @media (max-width: 768px) {
+        @media (max-width: 992px) {
             margin-bottom: 35px;
-            font-size: 18px;
+            font-size: 16px;
         }
 
         @media (max-width: 575px) {
@@ -82,7 +134,7 @@
         position: relative;
         height: 100%;
 
-        @media (max-width: 768px) {
+        @media (max-width: 992px) {
             height: auto;
         }
     }
@@ -91,19 +143,11 @@
         position: absolute;
         top: 50%;
         right: 0;
-        color: $orange;
+        color: #ffffff;
         transform: translateY(-50%);
 
-        @media (max-width: 768px) {
-            position: relative;
-            top: 0;
-            display: flex;
-            transform: none;
-            flex-wrap: wrap;
-        }
-
         &-item {
-            @media (max-width: 768px) {
+            @media (max-width: 992px) {
                 width: calc(100% / 2 - 20px);
             }
 
@@ -114,7 +158,7 @@
             &:not(:last-child) {
                 margin-bottom: 60px;
 
-                @media (max-width: 768px) {
+                @media (max-width: 992px) {
                     margin-bottom: 35px;
                 }
 
@@ -128,7 +172,7 @@
                 font-size: 100px;
                 font-weight: 700;
 
-                @media (max-width: 768px) {
+                @media (max-width: 992px) {
                     font-size: 70px;
                 }
 
@@ -168,7 +212,7 @@
         height: 100%;
         flex-direction: column;
 
-        @media (max-width: 768px) {
+        @media (max-width: 992px) {
             height: auto;
         }
     }
@@ -204,6 +248,15 @@
             font-weight: 700;
             color: #ffffff;
             opacity: 0.3;
+
+            @media (max-width: 768px) {
+                font-size: 72px;
+            }
+
+            @media (max-width: 575px) {
+                bottom: 5px;
+                font-size: 48px;
+            }
         }
     }
 

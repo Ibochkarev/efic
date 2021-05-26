@@ -2,12 +2,20 @@
     &__bg {
         height: 520px;
         background-size: cover;
+
+        @media (max-width: 575px) {
+            height: 380px;
+        }
     }
 
     &__wrap {
         display: flex;
         justify-content: flex-end;
         height: 520px;
+
+        @media (max-width: 575px) {
+            height: 380px;
+        }
     }
 
     &__info {

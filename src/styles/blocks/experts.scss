@@ -6,17 +6,18 @@
     &__description {
         max-width: 520px;
         margin-bottom: 55px;
+        font-weight: 300;
 
         @media (max-width: 768px) {
             margin-bottom: 35px;
         }
 
         p {
-            font-size: 24px;
+            font-size: 18px;
             line-height: 1.2;
 
             @media (max-width: 768px) {
-                font-size: 18px;
+                font-size: 16px;
             }
 
             @media (max-width: 575px) {
@@ -55,18 +56,31 @@
             @media (max-width: 992px) {
                 height: 110px;
             }
+
+            @media (max-width: 575px) {
+                height: 100px;
+            }
         }
 
         &-title {
             font-size: 18px;
             font-weight: 700;
             line-height: 1.2;
+
+            @media (max-width: 575px) {
+                font-size: 14px;
+            }
         }
 
         &-position {
             margin-bottom: 20px;
             font-size: 18px;
             line-height: 1.2;
+
+            @media (max-width: 575px) {
+                margin-bottom: 10px;
+                font-size: 14px;
+            }
         }
 
         &-link {
@@ -74,6 +88,10 @@
             display: block;
             width: max-content;
             color: $dark;
+
+            @media (max-width: 575px) {
+                font-size: 14px;
+            }
 
             &:hover::after {
                 right: -60px;
@@ -116,6 +134,17 @@
 
             .button {
                 margin-right: 75px;
+            }
+
+            @media (max-width: 575px) {
+                margin-top: 25px;
+                flex-wrap: wrap;
+                flex-direction: column-reverse;
+
+                .button {
+                    margin-top: 25px;
+                    margin-right: 0;
+                }
             }
         }
     }

@@ -9,12 +9,12 @@ mixin expert(data)
   .swiper-slide
     .experts__item
       .experts__item-photo
-        img(src='img/' + data.img alt="")
+        img(src='img/' + data.img alt!=data.name)
       .experts__item-info
         .experts__item-info__top
           .experts__item-title!=data.name
           .experts__item-position!=data.position
-        a.experts__item-link(href='#') View CV
+        a.experts__item-link(href!=data.link) View CV
 
 mixin plan(data)
   .col-12.col-md-6.col-lg-3
@@ -23,7 +23,7 @@ mixin plan(data)
       .plans__item-text!=data.text
       .plans__item-price!=data.price
       .plans__item-price__text!=data.priceText
-      a.plans__item-button.button.button--orange Join Now
+      a.plans__item-button.button.button--orange(href="#") Join Now
       .plans__item-note!=data.note
 
 mixin who(data)
