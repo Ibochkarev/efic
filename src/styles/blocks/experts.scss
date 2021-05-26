@@ -13,7 +13,7 @@
         }
 
         p {
-            font-size: 18px;
+            font-size: 17px;
             line-height: 1.2;
 
             @media (max-width: 768px) {
@@ -63,7 +63,7 @@
         }
 
         &-title {
-            font-size: 18px;
+            font-size: 17px;
             font-weight: 700;
             line-height: 1.2;
 
@@ -74,8 +74,12 @@
 
         &-position {
             margin-bottom: 20px;
-            font-size: 18px;
+            font-size: 17px;
             line-height: 1.2;
+
+            span {
+                font-style: italic;
+            }
 
             @media (max-width: 575px) {
                 margin-bottom: 10px;
