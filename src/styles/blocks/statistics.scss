@@ -102,6 +102,7 @@
 
                 span {
                     font-size: 54px;
+                    line-height: initial;
 
                     @media (max-width: 768px) {
                         font-size: 22px;
@@ -123,7 +124,7 @@
             }
 
             &__text {
-                font-size: 24px;
+                font-size: 22px;
                 font-weight: 700;
                 line-height: 28px;
 
