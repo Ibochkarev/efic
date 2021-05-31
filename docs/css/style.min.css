@@ -3811,7 +3811,6 @@ body {
   font-weight: 400;
   color: #303030;
   background: #fffef3;
-  scroll-behavior: smooth;
 }
 
 img {
@@ -4949,7 +4948,7 @@ a {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 280px;
+  width: 220px;
 }
 
 @media (max-width: 768px) {
@@ -5033,15 +5032,14 @@ a {
 }
 
 .statistics__numbers-item__text {
-  font-size: 22px;
+  font-size: 19px;
   font-weight: 700;
-  line-height: 28px;
+  line-height: 1.2;
 }
 
 @media (max-width: 575px) {
   .statistics__numbers-item__text {
     font-size: 16px;
-    line-height: 1.2;
     font-weight: 300;
   }
 }
@@ -5802,6 +5800,12 @@ a {
   }
 }
 
-.twitter__wrap-title {
-  text-align: center;
+.twitter iframe {
+  margin-bottom: 15px;
+}
+
+.twitter__button {
+  margin: 20px auto 0;
+  padding-right: 10px;
+  padding-left: 10px;
 }
